@@ -12,20 +12,48 @@ section {
 }
 h2 {
   color: rgb(207, 133, 207);
-  font-size: 25px;
+  font-size: 35px;
   font-weight: 350;
   text-decoration: underline wavy;
 }
 h1{
-font-size: 35px;
+font-size: 45px;
 font-weight: 375;
 }
+#Experience ul{
+  display: flex;
+}
+
 #Experience li{
-  display: inline-block;
+
   border-style:ridge;
   padding: 4px;
   margin: 10px;
+  list-style-type: none;
+}
+#Connect ul{
+  display: flex;
+  list-style-type: none;
+}
+
+#Connect img{
+  vertical-align: top;
+}
+#Connect li{
+  margin-right:20px;
 }
 #Connect a{
   color:rgb(79, 197, 138);
+}
+
+nav {
+position:sticky;
+top:0%;
+text-align: center;
+background-color: rgb(64, 99, 109);;
+height: 30px;
+}
+#navBar a{
+  color:rgb(79, 197, 138);
+  margin-right: 10px;
 }

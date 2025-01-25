@@ -1,3 +1,7 @@
+
+
+
+/* Desktop*/
 body {
   background-color:rgb(88, 119, 128);
   color: rgb(79, 197, 138);
@@ -56,4 +60,24 @@ height: 30px;
 #navBar a{
   color:rgb(79, 197, 138);
   margin-right: 10px;
+}
+/*Tablet*/
+@media screen and (max-width:1000px ) {
+  body{background-color: grey;
+    color: white;
+ }
+ h2{
+  color:rgb(210, 187, 236) ;
+ }
+}
+ /*Phone*/
+ @media screen and (max-width: 800px) {
+  body {background-color: rgb(148, 130, 107);
+  color: black;
+  font-size: 15px;
+}
+h2{
+  color: bisque;
+  font-size:25px ;
+}
 }

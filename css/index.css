@@ -72,12 +72,12 @@ height: 30px;
 }
  /*Phone*/
  @media screen and (max-width: 800px) {
-  body {background-color: rgb(148, 130, 107);
+  body {background-color: rgb(145, 113, 72);
   color: black;
   font-size: 15px;
 }
 h2{
-  color: bisque;
+  color: rgb(253, 235, 213);
   font-size:25px ;
 }
 }

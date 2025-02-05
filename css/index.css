@@ -61,6 +61,30 @@ height: 30px;
   color:rgb(79, 197, 138);
   margin-right: 10px;
 }
+
+
+#Messages ul{
+list-style: none;
+padding: 0%;
+font-size: 15px;
+
+}
+#Messages li{
+margin: 25px 0;
+}
+#Messages span{
+  display:block;
+  margin: 5px 0;
+}
+#Messages a{
+  font-size: 20px;
+}
+#Messages:not(li) {
+display: none;
+}
+#Messages:has(li) {
+  display:contents;
+  }
 /*Tablet*/
 @media screen and (max-width:1000px ) {
   body{background-color: grey;

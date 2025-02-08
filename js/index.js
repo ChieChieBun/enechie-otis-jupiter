@@ -38,6 +38,31 @@ messageForm.addEventListener(`submit`, event =>{
   });
   newMessage.appendChild(removeButton);
   messageList.appendChild(newMessage);
-  console.log(messageList);
   messageForm.reset();
 } );
+
+fetch (`https://api.github.com/users/ChieChieBun/repos`)
+.then(response => {
+  if (response.ok) {
+    return response.text()
+  }
+  else{
+    throw new Error (`Failed to fetch repositories`)
+  }
+
+})
+.then(data => {
+  const repositories = JSON.parse(data);
+  console.log(repositories);
+  const projectSection = document.querySelector(`#Projects`);
+  const projectList = projectSection.querySelector(`ul`);
+  for (let i =0; i < repositories.length; i++) {
+    const project = document.createElement(`li`);
+    project.innerText = repositories[i].name;
+    projectList.appendChild(project);
+  }
+
+})
+.catch(error =>{
+console.error(`Error no repositories`)
+});

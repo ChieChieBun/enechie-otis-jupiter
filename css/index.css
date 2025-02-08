@@ -11,6 +11,12 @@ body {
 section {
   margin: 1.5rem 3rem;
 }
+#photoName img {
+  border-radius: 60%;
+  border-style:outset;
+  border-width: 10px;
+  border-color: rgb(79, 197, 138);
+}
 #photoName {
   text-align:center;
 }
@@ -63,6 +69,16 @@ height: 30px;
 }
 
 
+#Message label{
+  margin-right: 15px;
+  display: block;
+}
+
+
+#Message input{
+ margin-bottom: 20px;
+
+}
 #Messages ul{
 list-style: none;
 padding: 0%;
@@ -93,6 +109,9 @@ display: none;
  h2{
   color:rgb(210, 187, 236) ;
  }
+ #photoName img{
+  border-color:rgb(210, 187, 236)  ;
+ }
 }
  /*Phone*/
  @media screen and (max-width: 800px) {
@@ -103,5 +122,8 @@ display: none;
 h2{
   color: rgb(253, 235, 213);
   font-size:25px ;
+}
+#photoName img{
+  border-color: rgb(253, 235, 213);
 }
 }

@@ -11,6 +11,12 @@ body {
 section {
   margin: 1.5rem 3rem;
 }
+#photoName img {
+  border-radius: 60%;
+  border-style:outset;
+  border-width: 10px;
+  border-color: rgb(79, 197, 138);
+}
 #photoName {
   text-align:center;
 }
@@ -34,6 +40,14 @@ font-weight: 375;
   padding: 4px;
   margin: 10px;
   list-style-type: none;
+}
+#Skills ul{
+  padding-left: 0%;
+  margin-left: 15px;
+}
+#Skills li{
+  list-style: none;
+  font-size: 17px;
 }
 #Connect ul{
   display: flex;
@@ -61,6 +75,49 @@ height: 30px;
   color:rgb(79, 197, 138);
   margin-right: 10px;
 }
+
+
+#Message label{
+  margin-right: 15px;
+  display: block;
+}
+
+
+#Message input{
+ margin-bottom: 20px;
+
+}
+#Messages ul{
+list-style: none;
+padding: 0%;
+font-size: 15px;
+
+}
+#Messages li{
+margin: 25px 0;
+}
+#Messages span{
+  display:block;
+  margin: 5px 0;
+}
+#Messages a{
+  font-size: 20px;
+}
+#Messages:not(li) {
+display: none;
+}
+#Messages:has(li) {
+  display:contents;
+  }
+  #Projects ul{
+    padding-left: 0%;
+    margin-left: 15px;
+  }
+  #Projects li{
+    text-transform: capitalize;
+    list-style: none;
+    font-size: 17px;
+  }
 /*Tablet*/
 @media screen and (max-width:1000px ) {
   body{background-color: grey;
@@ -68,6 +125,9 @@ height: 30px;
  }
  h2{
   color:rgb(210, 187, 236) ;
+ }
+ #photoName img{
+  border-color:rgb(210, 187, 236)  ;
  }
 }
  /*Phone*/
@@ -79,5 +139,8 @@ height: 30px;
 h2{
   color: rgb(253, 235, 213);
   font-size:25px ;
+}
+#photoName img{
+  border-color: rgb(253, 235, 213);
 }
 }
